@@ -1,0 +1,67 @@
+Number of tables in  database ( source 59  <<<=>>> desc 56 )
+table not contain in source table are below
+	T_PRINT_TICKET
+	T_SumBatchTotal
+	T_SumLoadTotal
+----------------------------------------------------------------------------------
+Start Compare column count
+Number of column in table T_PRINT_TICKET not equal ( source 3  <<<  >>> desc 0 )
+Number of column in table T_SumBatchTotal not equal ( source 12  <<<  >>> desc 0 )
+Number of column in table T_SumLoadTotal not equal ( source 4  <<<  >>> desc 0 )
+----------------------------------------------------------------------------------
+Start Compare Column Name
+Column Column count are not equal in table T_PRINT_TICKET are difference
+Column not contain in source table are below
+	TI_ID
+	TI_CU
+	TI_CY
+Column Column count are not equal in table T_SumBatchTotal are difference
+Column not contain in source table are below
+	SBT_ID
+	SBT_Date
+	SBT_TI
+	SBT_TIQty
+	SBT_BTQty
+	SBT_ETI
+	SBT_ETIQty
+	SBT_EBTQty
+	CreateBy
+	CreateDate
+	UpdateBy
+	UpdateDate
+Column Column count are not equal in table T_SumLoadTotal are difference
+Column not contain in source table are below
+	TSL_ID
+	LO_NO
+	E_Mode
+	TSL_Date
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+Start Compare Column DataType
+Column DataType Column count are not equal in table T_PRINT_TICKET are difference
+Column DataType not contain in source table are below
+	 Column Name TI_IDData Type uniqueidentifier
+	 Column Name TI_CUData Type bit
+	 Column Name TI_CYData Type bit
+Column DataType Column count are not equal in table T_SumBatchTotal are difference
+Column DataType not contain in source table are below
+	 Column Name SBT_IDData Type uniqueidentifier
+	 Column Name SBT_DateData Type nvarchar
+	 Column Name SBT_TIData Type smallint
+	 Column Name SBT_TIQtyData Type float
+	 Column Name SBT_BTQtyData Type float
+	 Column Name SBT_ETIData Type smallint
+	 Column Name SBT_ETIQtyData Type float
+	 Column Name SBT_EBTQtyData Type float
+	 Column Name CreateByData Type nvarchar
+	 Column Name CreateDateData Type datetime
+	 Column Name UpdateByData Type nvarchar
+	 Column Name UpdateDateData Type datetime
+Column DataType Column count are not equal in table T_SumLoadTotal are difference
+Column DataType not contain in source table are below
+	 Column Name TSL_IDData Type int
+	 Column Name LO_NOData Type nvarchar
+	 Column Name E_ModeData Type bit
+	 Column Name TSL_DateData Type nvarchar
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------

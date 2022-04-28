@@ -1,0 +1,9 @@
+D:\vs_2019\SqlCe\CompareSDF_3_5\bin\Debug\CompareSDF_3_5.exe.config
+D:\vs_2019\SqlCe\CompareSDF_3_5\bin\Debug\CompareSDF_3_5.exe
+D:\vs_2019\SqlCe\CompareSDF_3_5\bin\Debug\CompareSDF_3_5.pdb
+D:\vs_2019\SqlCe\CompareSDF_3_5\bin\Debug\System.Data.SqlServerCe.dll
+D:\vs_2019\SqlCe\CompareSDF_3_5\obj\Debug\CompareSDF_3_5.csproj.CoreCompileInputs.cache
+D:\vs_2019\SqlCe\CompareSDF_3_5\obj\Debug\CompareSDF_3_5.csproj.CopyComplete
+D:\vs_2019\SqlCe\CompareSDF_3_5\obj\Debug\CompareSDF_3_5.exe
+D:\vs_2019\SqlCe\CompareSDF_3_5\obj\Debug\CompareSDF_3_5.pdb
+D:\vs_2019\SqlCe\CompareSDF_3_5\obj\Debug\CompareSDF_3_5.csprojAssemblyReference.cache

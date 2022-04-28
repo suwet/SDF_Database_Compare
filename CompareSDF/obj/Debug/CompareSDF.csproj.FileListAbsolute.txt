@@ -1,0 +1,16 @@
+D:\vs_2019\SqlCe\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\vs_2019\SqlCe\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\vs_2019\SqlCe\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\vs_2019\SqlCe\ConsoleApp1\bin\Debug\System.Data.SqlServerCe.dll
+D:\vs_2019\SqlCe\ConsoleApp1\obj\Debug\CompareSDF.csproj.CoreCompileInputs.cache
+D:\vs_2019\SqlCe\ConsoleApp1\obj\Debug\CompareSDF.csproj.CopyComplete
+D:\vs_2019\SqlCe\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\vs_2019\SqlCe\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+D:\vs_2019\SqlCe\CompareSDF\bin\Debug\ConsoleApp1.exe.config
+D:\vs_2019\SqlCe\CompareSDF\bin\Debug\ConsoleApp1.exe
+D:\vs_2019\SqlCe\CompareSDF\bin\Debug\ConsoleApp1.pdb
+D:\vs_2019\SqlCe\CompareSDF\bin\Debug\System.Data.SqlServerCe.dll
+D:\vs_2019\SqlCe\CompareSDF\obj\Debug\CompareSDF.csproj.CoreCompileInputs.cache
+D:\vs_2019\SqlCe\CompareSDF\obj\Debug\CompareSDF.csproj.CopyComplete
+D:\vs_2019\SqlCe\CompareSDF\obj\Debug\ConsoleApp1.exe
+D:\vs_2019\SqlCe\CompareSDF\obj\Debug\ConsoleApp1.pdb
