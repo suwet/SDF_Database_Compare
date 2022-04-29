@@ -92,5 +92,147 @@ namespace CompareSDF_3_5
             }
             return null;
         }
+
+        public static List<TableContraintsModel> GetSourceTableConstraints()
+        {
+            string sdf_1 = System.Configuration.ConfigurationManager.AppSettings["sdf_1"];
+
+            using (SqlCeConnection conn_sdf1 = new SqlCeConnection(sdf_1))
+            {
+                if (conn_sdf1.State != System.Data.ConnectionState.Open)
+                {
+                    conn_sdf1.Open();
+                    //Console.WriteLine("Open connection sdf 1");
+                    using (var cmd = new SqlCeCommand("select * from INFORMATION_SCHEMA.TABLE_CONSTRAINTS order by Table_name", conn_sdf1))
+                    {
+                        SqlCeDataReader reader = cmd.ExecuteReader();
+                        List<TableContraintsModel> tables = new List<TableContraintsModel>();
+                        while (reader.Read())
+                        {
+                            var model = new TableContraintsModel();
+                            model.ConstraintName = reader.GetString(2);
+                            model.TableName = reader.GetString(5);
+                            model.ConstraintType = reader.GetString(6);
+                            tables.Add(model);
+                            //model.Data_Type = reader.GetString(2);
+                            //Console.WriteLine(table_name);
+                        }
+                        return tables;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Cannot open connection");
+                }
+            }
+            return null;
+        }
+
+        public static List<TableContraintsModel> GetDestTableConstraints()
+        {
+            string sdf_2 = System.Configuration.ConfigurationManager.AppSettings["sdf_2"];
+
+            using (SqlCeConnection conn_sdf2 = new SqlCeConnection(sdf_2))
+            {
+                if (conn_sdf2.State != System.Data.ConnectionState.Open)
+                {
+                    conn_sdf2.Open();
+                    //Console.WriteLine("Open connection sdf 1");
+                    using (var cmd = new SqlCeCommand("select * from INFORMATION_SCHEMA.TABLE_CONSTRAINTS order by Table_name", conn_sdf2))
+                    {
+                        SqlCeDataReader reader = cmd.ExecuteReader();
+                        List<TableContraintsModel> tables = new List<TableContraintsModel>();
+                        while (reader.Read())
+                        {
+                            var model = new TableContraintsModel();
+                            model.ConstraintName = reader.GetString(2);
+                            model.TableName = reader.GetString(5);
+                            model.ConstraintType = reader.GetString(6);
+                            tables.Add(model);
+                            //model.Data_Type = reader.GetString(2);
+                            //Console.WriteLine(table_name);
+                        }
+                        return tables;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Cannot open connection");
+                }
+            }
+            return null;
+        }
+
+        public static List<TableContraintsModel> GetSourceReferenceTableConstraints()
+        {
+            string sdf_1 = System.Configuration.ConfigurationManager.AppSettings["sdf_1"];
+
+            using (SqlCeConnection conn_sdf1 = new SqlCeConnection(sdf_1))
+            {
+                if (conn_sdf1.State != System.Data.ConnectionState.Open)
+                {
+                    conn_sdf1.Open();
+                    //Console.WriteLine("Open connection sdf 1");
+                    using (var cmd = new SqlCeCommand("select * from INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS order by CONSTRAINT_TABLE_NAME ", conn_sdf1))
+                    {
+                        SqlCeDataReader reader = cmd.ExecuteReader();
+                        List<TableContraintsModel> tables = new List<TableContraintsModel>();
+                        while (reader.Read())
+                        {
+                            var model = new TableContraintsModel();
+                            model.ConstraintTableName = reader.GetString(2);
+                            model.ConstraintName = reader.GetString(3);
+                            model.UniqConstraintTableName = reader.GetString(6);
+                            model.UniqConstraintName = reader.GetString(7);
+                            tables.Add(model);
+                            //model.Data_Type = reader.GetString(2);
+                            //Console.WriteLine(table_name);
+                        }
+                        return tables;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Cannot open connection");
+                }
+            }
+            return null;
+        }
+
+        public static List<TableContraintsModel> GetDestReferenceTableConstraints()
+        {
+            string sdf_2 = System.Configuration.ConfigurationManager.AppSettings["sdf_2"];
+
+            using (SqlCeConnection conn_sdf2 = new SqlCeConnection(sdf_2))
+            {
+                if (conn_sdf2.State != System.Data.ConnectionState.Open)
+                {
+                    conn_sdf2.Open();
+                    //Console.WriteLine("Open connection sdf 1");
+                    using (var cmd = new SqlCeCommand("select * from INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS order by CONSTRAINT_TABLE_NAME ", conn_sdf2))
+                    {
+                        SqlCeDataReader reader = cmd.ExecuteReader();
+                        List<TableContraintsModel> tables = new List<TableContraintsModel>();
+                        while (reader.Read())
+                        {
+                            var model = new TableContraintsModel();
+                            model.ConstraintTableName = reader.GetString(2);
+                            model.ConstraintName = reader.GetString(3);
+                            model.UniqConstraintTableName = reader.GetString(6);
+                            model.UniqConstraintName = reader.GetString(7);
+                            tables.Add(model);
+                            //model.Data_Type = reader.GetString(2);
+                            //Console.WriteLine(table_name);
+                        }
+                        return tables;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Cannot open connection");
+                }
+            }
+            return null;
+        }
     }
 }

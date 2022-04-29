@@ -55,8 +55,10 @@ namespace CompareSDF_3_5
             CompareColumnDataType(source);
 
             WriteResultLog.WriteLog("----------------------------------------------------------------------------------");
-
-
+            CompareContraint(source);
+            WriteResultLog.WriteLog("----------------------------------------------------------------------------------");
+            CompareReferenceContraint(source);
+            WriteResultLog.WriteLog("----------------------------------------------------------------------------------");
             //Console.WriteLine("you can swap source and desc in app.config by change key");
             Console.WriteLine("success");
             Console.ReadLine();
@@ -103,6 +105,48 @@ namespace CompareSDF_3_5
                     }
                 }
                 
+            }
+            WriteResultLog.WriteLog("----------------------------------------------------------------------------------");
+        }
+
+        private static void CompareContraint(List<TableStructureModel> source)
+        {
+            WriteResultLog.WriteLog("Start Compare Contraint");
+            // compare column name
+            foreach (var t_s in source.GroupBy(x => x.Table_Name))
+            {
+                var result = SchemaCompare.GetContraintDiff(t_s.Key);
+                if (result.Count() > 0)
+                {
+                    WriteResultLog.WriteLog(string.Format("Contraint in table {0} are difference", t_s.Key));
+                    WriteResultLog.WriteLog("Contraint not contain in source table are below");
+                    foreach (var item in result)
+                    {
+                        WriteResultLog.WriteLog("\t contraint type " + item.ContraintType);
+                    }
+                }
+
+            }
+            WriteResultLog.WriteLog("----------------------------------------------------------------------------------");
+        }
+
+        private static void CompareReferenceContraint(List<TableStructureModel> source)
+        {
+            WriteResultLog.WriteLog("Start Compare ReferenceContraint");
+            // compare column name
+            foreach (var t_s in source.GroupBy(x => x.Table_Name))
+            {
+                var result = SchemaCompare.GetReferenceContraintDiff(t_s.Key);
+                if (result.Count() > 0)
+                {
+                    WriteResultLog.WriteLog(string.Format("ReferenceContraint in table {0} are difference", t_s.Key));
+                    WriteResultLog.WriteLog("ReferenceContraint not contain in source table are below");
+                    foreach (var item in result)
+                    {
+                        WriteResultLog.WriteLog("\t uniq contraint name " + item.UniqContraintTableName);
+                    }
+                }
+
             }
             WriteResultLog.WriteLog("----------------------------------------------------------------------------------");
         }

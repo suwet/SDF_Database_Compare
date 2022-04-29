@@ -6,4 +6,3 @@ D:\vs_2019\SqlCe\CompareSDF_3_5\obj\Debug\CompareSDF_3_5.csproj.CoreCompileInput
 D:\vs_2019\SqlCe\CompareSDF_3_5\obj\Debug\CompareSDF_3_5.csproj.CopyComplete
 D:\vs_2019\SqlCe\CompareSDF_3_5\obj\Debug\CompareSDF_3_5.exe
 D:\vs_2019\SqlCe\CompareSDF_3_5\obj\Debug\CompareSDF_3_5.pdb
-D:\vs_2019\SqlCe\CompareSDF_3_5\obj\Debug\CompareSDF_3_5.csprojAssemblyReference.cache

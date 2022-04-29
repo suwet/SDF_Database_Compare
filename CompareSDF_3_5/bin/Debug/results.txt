@@ -65,3 +65,15 @@ Column DataType not contain in source table are below
 	 Column Name TSL_DateData Type nvarchar
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
+Start Compare Contraint
+Contraint in table T_SumBatchTotal are difference
+Contraint not contain in source table are below
+	 contraint type PRIMARY KEY
+Contraint in table T_SumLoadTotal are difference
+Contraint not contain in source table are below
+	 contraint type PRIMARY KEY
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+Start Compare ReferenceContraint
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
