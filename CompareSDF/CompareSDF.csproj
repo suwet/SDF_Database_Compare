@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\ContraintDiff.cs" />
     <Compile Include="Models\DataTypeDiff.cs" />
+    <Compile Include="Models\TableContraintsModel.cs" />
     <Compile Include="Models\TableDiff.cs" />
     <Compile Include="Models\TableStructureModel.cs" />
     <Compile Include="Program.cs" />
